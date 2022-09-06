@@ -396,7 +396,7 @@ def main(argv):
 
     argument_spec = dict(
         switch_login=dict(type='str'),
-        switch_password=dict(type='str'),
+        switch_password=dict(type='str', no_log=True),
         switch_address=dict(type='str'),
         global_timeout=dict(type='int', default=15),
         command_set=dict(type='list', elements='dict', options=command_set_options),
